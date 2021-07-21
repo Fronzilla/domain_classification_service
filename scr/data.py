@@ -14,7 +14,7 @@ def load_data(session_state) -> NoReturn:
 
     if data_file is not None:
 
-        df_data = pd.read_csv(data_file)
+        df_data = pd.read_csv(data_file).head(10)
         st.write(df_data.head())
 
         if domain_column not in df_data.columns:

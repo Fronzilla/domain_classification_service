@@ -21,7 +21,7 @@ def scrap_data(url_: str, length=1500) -> str:
         if not url_.startswith('http'):
             url_ = 'http://' + url_
 
-        r = scraper.get(url_, headers=HEADERS)
+        r = scraper.get(url_, headers=HEADERS, timeout=1)
 
         if r.apparent_encoding != r.encoding:  # если явная кодировка != кодировки от запроса - перекодируем
             r.encoding = r.apparent_encoding
