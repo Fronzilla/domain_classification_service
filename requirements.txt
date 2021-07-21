@@ -1,0 +1,6 @@
+streamlit==0.84.1
+pandas==1.2.5
+cloudscraper==1.2.58
+sentence_transformers==2.0.0
+numpy==1.21.0
+beautifulsoup4==4.9.3
